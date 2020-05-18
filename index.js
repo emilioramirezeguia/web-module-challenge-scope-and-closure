@@ -18,8 +18,6 @@ function processFirstItem(stringList, callback) {
   return callback(stringList[0]);
 }
 
-processFirstItem(["telon", "mexico"], callback);
-
 // ⭐️ Example Challenge END ⭐️
 
 ///// M V P ///////
@@ -40,7 +38,7 @@ processFirstItem(["telon", "mexico"], callback);
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better?
 
  counter1 would be preferable when we want to keep an updated value for count that we can track or modify at any time. couter2 would be preferable to run something that doesn't require long-term memory, like a for loop.
- 
+
  *
  */
 
@@ -65,9 +63,11 @@ function counter2() {
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/) {
-  /*Code Here*/
+function inning() {
+  console.log(Math.floor(Math.random() * 3));
 }
+
+inning();
 
 /* Task 3: finalScore()
 
